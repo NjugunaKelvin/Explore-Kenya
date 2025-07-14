@@ -13,15 +13,21 @@ export const NAV_ITEMS: NavItem[] = [
       { title: "Agriculture", path: "/economy/agriculture", color: "text-emerald-300" },
       { title: "Tech", path: "/economy/tech", color: "text-emerald-300" },
       { title: "Infrastructure", path: "/economy/infrastructure", color: "text-emerald-300" },
+      { title: "Manufacturing", path: "/economy/infrastructure", color: "text-emerald-300" },
+      { title: "Invest in Kenya", path: "/economy/infrastructure", color: "text-emerald-300" },
+
+
     ],
   },
   {
     title: "Tourism",
     color: "text-amber-400",
     children: [
-      { title: "Safari Parks", path: "/tourism/safari-parks", color: "text-amber-300" },
-      { title: "Beaches", path: "/tourism/beaches", color: "text-amber-300" },
-      { title: "Wildlife", path: "/tourism/wildlife", color: "text-amber-300" },
+      { title: "Top Destinations", path: "/tourism/safari-parks", color: "text-amber-300" },
+      { title: "Safari and Wildlife", path: "/tourism/beaches", color: "text-amber-300" },
+      { title: "Urban Experiences", path: "/tourism/wildlife", color: "text-amber-300" },
+      { title: "Beach and Coastline", path: "/tourism/wildlife", color: "text-amber-300" },
+
     ],
   },
   {
@@ -29,7 +35,11 @@ export const NAV_ITEMS: NavItem[] = [
     color: "text-fuchsia-400",
     children: [
       { title: "Traditional Wear", path: "/fashion/traditional", color: "text-fuchsia-300" },
-      { title: "Modern Trends", path: "/fashion/modern", color: "text-fuchsia-300" },
+      { title: "Designers and Brands", path: "/fashion/modern", color: "text-fuchsia-300" },
+      { title: "Modern Fashion", path: "/fashion/modern", color: "text-fuchsia-300" },
+      { title: "Fashion Gallery", path: "/fashion/modern", color: "text-fuchsia-300" },
+
+
     ],
   },
   {
@@ -45,17 +55,22 @@ export const NAV_ITEMS: NavItem[] = [
     title: "Our Culture",
     color: "text-purple-400",
     children: [
-      { title: "Foods and Snacks", path: "/explore/hidden-gems", color: "text-purple-300" },
-      { title: "Cultural Experiences", path: "/explore/cultural", color: "text-purple-300" },
+      { title: "Kenyan Cuisines", path: "/explore/hidden-gems", color: "text-purple-300" },
+      { title: "Ethnic Groups", path: "/explore/cultural", color: "text-purple-300" },
+      { title: "Arts and Craft", path: "/explore/cultural", color: "text-purple-300" },
+      { title: "Oral Traditions", path: "/explore/cultural", color: "text-purple-300" },
+
+
     ],
   },
   {
     title: "Latest News",
     color: "text-red-400",
     children: [
-      { title: "Politics", path: "/news/politics", color: "text-red-300" },
+      { title: "Sports", path: "/news/politics", color: "text-red-300" },
       { title: "Business", path: "/news/business", color: "text-red-300" },
       { title: "Youth Innovation", path: "/news/youth-innovation", color: "text-red-300" },
+      { title: "Education", path: "/news/youth-innovation", color: "text-red-300" },
     ],
   },
 ];
