@@ -1,8 +1,21 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
+'use client';
+
+import { useEffect } from 'react';
 import Navbar from "@/Components/Navbar/Navbar";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   const media = {
     heroVideo: "/videos/Kenya.mp4",
     heroPoster: "/images/hero-poster.jpg",
@@ -10,16 +23,16 @@ export default function Home() {
     destinations: [
       "/images/home/MaasaiMara.jpg",
       "/images/home/diani.jpg",
-      "/images//home/Mtkenya.jpg"
+      "/images/home/Mtkenya.jpg"
     ]
   };
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-white text-black">
       <Navbar />
 
       <section className="relative h-screen w-full overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0">
           <video
             autoPlay
             loop
@@ -30,137 +43,124 @@ export default function Home() {
           >
             <source src={media.heroVideo} type="video/mp4" />
           </video>
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-amber-300 bg-clip-text text-transparent">
-            This Is Kenya
+        <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
+          <h1 
+            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-800 to-orange-800 bg-clip-text text-transparent"
+            data-aos="fade-down"
+          >
+            Discover Kenya
           </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl max-w-2xl mb-8 text-gray-300">
-            A Land of Beauty, Culture, and Opportunity
+          <p 
+            className="text-xl md:text-2xl max-w-2xl mb-8 text-gray-800 font-medium"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            Where nature meets innovation
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-blue-600 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg hover:shadow-emerald-500/20">
-            Explore Now
+          <button 
+            className="px-8 py-3 bg-gradient-to-r from-black to-gray-800 text-white rounded-full font-medium hover:opacity-90 transition-opacity"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Begin Exploration
           </button>
         </div>
       </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          What You Probably Didn't Know About Kenya
+        <h2 
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          data-aos="fade-up"
+        >
+          Kenya Unveiled
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              emoji: "🦒",
-              title: "Home to the Maasai Mara",
-              description: "Hosts the Great Wildebeest Migration, one of the Seven Natural Wonders of Africa",
-              bg: "bg-amber-900/20",
-              border: "border-amber-800"
+              title: "Wildlife Sanctuary",
+              description: "Home to the iconic Maasai Mara and the Great Migration",
+              border: "border-gray-200"
             },
             {
-              emoji: "🏃",
-              title: "Running Nation",
-              description: "Producing some of the world's best long-distance runners for decades",
-              bg: "bg-blue-900/20",
-              border: "border-blue-800"
+              title: "Innovation Hub",
+              description: "Birthplace of mobile money with M-Pesa revolutionizing finance",
+              border: "border-gray-200"
             },
             {
-              emoji: "🌍",
-              title: "Cradle of Mankind",
-              description: "Some of the oldest human fossils were discovered in Turkana",
-              bg: "bg-emerald-900/20",
-              border: "border-emerald-800"
+              title: "Cultural Mosaic",
+              description: "Over 40 ethnic groups with rich traditions and heritage",
+              border: "border-gray-200"
             },
             {
-              emoji: "☕",
-              title: "Coffee Origin",
-              description: "Kenyan AA coffee is among the world's most sought-after specialty coffees",
-              bg: "bg-purple-900/20",
-              border: "border-purple-800"
+              title: "Scenic Landscapes",
+              description: "From snow-capped mountains to pristine coastal beaches",
+              border: "border-gray-200"
             },
             {
-              emoji: "📱",
-              title: "Tech Hub",
-              description: "M-Pesa, the world's first mobile money service, was invented here",
-              bg: "bg-fuchsia-900/20",
-              border: "border-fuchsia-800"
+              title: "Agricultural Power",
+              description: "World-renowned for tea, coffee, and fresh produce",
+              border: "border-gray-200"
             },
             {
-              emoji: "🌋",
-              title: "Volcanic Lakes",
-              description: "Lake Nakuru transforms pink with millions of flamingos seasonally",
-              bg: "bg-red-900/20",
-              border: "border-red-800"
+              title: "Athletic Excellence",
+              description: "Producing world-record holding long-distance runners",
+              border: "border-gray-200"
             }
           ].map((fact, index) => (
             <div 
               key={index} 
-              className={`${fact.bg} p-6 rounded-xl border ${fact.border} hover:border-white/50 transition-all hover:scale-[1.02]`}
+              className={`p-6 rounded-xl border ${fact.border} hover:border-gray-400 transition-all`}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              <span className="text-4xl mb-3 block">{fact.emoji}</span>
-              <h3 className="text-xl font-bold mb-2 text-white">{fact.title}</h3>
-              <p className="text-gray-400">{fact.description}</p>
+              <h3 className="text-xl font-bold mb-2">{fact.title}</h3>
+              <p className="text-gray-600">{fact.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gradient-to-b from-gray-900/30 to-black">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Explore Kenya
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-50">
+        <h2 
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          data-aos="fade-up"
+        >
+          Key Experiences
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
-              title: "Tourism",
-              icon: "🌍",
-              description: "Discover breathtaking landscapes and wildlife",
-              color: "from-amber-500 to-amber-600",
-              bgImage: "bg-[url('/images/tourism-bg.jpg')]"
+              title: "Safari Adventures",
+              description: "Witness the Big Five in their natural habitat"
             },
             {
-              title: "Culture",
-              icon: "🎭",
-              description: "Rich traditions and diverse communities",
-              color: "from-purple-500 to-purple-600",
-              bgImage: "bg-[url('/images/culture-bg.jpg')]"
+              title: "Cultural Tours",
+              description: "Engage with local communities and traditions"
             },
             {
-              title: "Economy",
-              icon: "💼",
-              description: "Africa's growing economic powerhouse",
-              color: "from-emerald-500 to-emerald-600",
-              bgImage: "bg-[url('/images/economy-bg.jpg')]"
+              title: "Beach Getaways",
+              description: "Relax on pristine Indian Ocean beaches"
             },
             {
-              title: "Education",
-              icon: "🎓",
-              description: "Leading universities and research",
-              color: "from-blue-500 to-blue-600",
-              bgImage: "bg-[url('/images/education-bg.jpg')]"
-            },
-            {
-              title: "Fashion",
-              icon: "👗",
-              description: "Vibrant textiles and modern designers",
-              color: "from-fuchsia-500 to-fuchsia-600",
-              bgImage: "bg-[url('/images/fashion-bg.jpg')]"
+              title: "Urban Exploration",
+              description: "Discover Nairobi's vibrant art and food scene"
             }
           ].map((category, index) => (
             <div 
               key={index} 
-              className={`group relative overflow-hidden rounded-xl h-48 ${category.bgImage} bg-cover bg-center`}
+              className="group relative overflow-hidden rounded-xl h-48 bg-black"
+              data-aos="zoom-in"
+              data-aos-delay={index * 150}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-80 group-hover:opacity-90 transition-opacity`}></div>
-              <div className="relative z-10 h-full flex flex-col items-center justify-center p-4 text-center">
-                <span className="text-4xl mb-3">{category.icon}</span>
-                <h3 className="text-xl font-bold mb-2">{category.title}</h3>
-                <p className="text-sm text-gray-200">{category.description}</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/30"></div>
+              <div className="relative h-full flex flex-col items-center justify-center p-4 text-center">
+                <h3 className="text-xl font-bold mb-2 text-white">{category.title}</h3>
+                <p className="text-sm text-gray-300">{category.description}</p>
               </div>
             </div>
           ))}
@@ -169,54 +169,51 @@ export default function Home() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="lg:w-1/2">
+          <div 
+            className="lg:w-1/2"
+            data-aos="fade-right"
+          >
             <img
               src={media.mpesaImage}
               alt="M-Pesa mobile money"
-              className="w-full rounded-xl shadow-2xl border border-gray-800 hover:border-emerald-500 transition-all"
+              className="w-full rounded-xl shadow-lg border border-gray-200"
             />
           </div>
-          <div className="lg:w-1/2">
-            <span className="text-emerald-500 font-medium mb-2 block">Innovation Spotlight</span>
+          <div 
+            className="lg:w-1/2"
+            data-aos="fade-left"
+          >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">M-Pesa</span> - Revolutionizing Finance
+              Financial Innovation
             </h2>
-            <p className="text-lg text-gray-400 mb-6">
-              Kenya's groundbreaking mobile money service that transformed banking for millions. 
-              M-Pesa allows users to deposit, withdraw, transfer money, and pay for goods and 
-              services easily with a mobile device.
+            <p className="text-lg text-gray-700 mb-6">
+              M-Pesa revolutionized mobile banking, creating economic opportunities for millions across Africa. This Kenya-born innovation demonstrates the country's capacity for technological leadership.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-800">
-                <h4 className="font-bold text-emerald-400">50M+</h4>
-                <p className="text-sm text-gray-400">Active Users</p>
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 className="font-bold">50M+</h4>
+                <p className="text-sm text-gray-600">Users</p>
               </div>
-              <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-800">
-                <h4 className="font-bold text-emerald-400">2007</h4>
-                <p className="text-sm text-gray-400">Launch Year</p>
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 className="font-bold">$1B+</h4>
+                <p className="text-sm text-gray-600">Daily Transactions</p>
               </div>
             </div>
-            <button className="px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-blue-600 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
-              Discover More
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
+            <button className="px-6 py-2.5 bg-black text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+              Learn More
             </button>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gradient-to-t from-gray-900/30 to-black">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-50">
         <div className="flex justify-between items-end mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Top Destinations
+          <h2 
+            className="text-3xl md:text-4xl font-bold"
+            data-aos="fade-up"
+          >
+            Must-Visit Locations
           </h2>
-          <button className="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 text-sm">
-            View all
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-            </svg>
-          </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -224,23 +221,28 @@ export default function Home() {
             {
               name: "Maasai Mara",
               image: media.destinations[0],
-              caption: "Witness the spectacular Great Migration",
-              location: "Narok County"
+              caption: "The ultimate safari destination",
+              location: "Wildlife Reserve"
             },
             {
               name: "Diani Beach",
               image: media.destinations[1],
-              caption: "Pristine white sands and turquoise waters",
-              location: "Kwale County"
+              caption: "Pristine white sand beaches",
+              location: "Coastal Region"
             },
             {
               name: "Mount Kenya",
               image: media.destinations[2],
-              caption: "Africa's second highest mountain",
-              location: "Central Kenya"
+              caption: "Africa's second highest peak",
+              location: "Central Highlands"
             }
           ].map((destination, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl h-96">
+            <div 
+              key={index} 
+              className="group relative overflow-hidden rounded-xl h-96"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <img
                 src={destination.image}
                 alt={destination.name}
