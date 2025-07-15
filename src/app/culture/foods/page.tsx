@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
+import Navbar from '@/Components/Navbar/Navbar';
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -33,54 +35,120 @@ export default function KenyanCuisine() {
       {
         name: "Ugali",
         description: "A staple food made from maize flour, served with vegetables, meat, or fish stews.",
-        images: ["/images/foods/Ugali.jpg", "/images/foods/Chapati.jpg"],
+        images: ["/images/foods/Ugali.jpg", "/images/foods/ugali2.jpg"],
         region: "Nationwide"
       },
       {
         name: "Sukuma Wiki",
         description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
-        images: ["/images/foods/Chapati.jpg", "/images/foods/Chapati.jpg"],
+        images: ["/images/foods/sukumawiki.jpg"],
         region: "Nationwide"
-      }
+      },
+      {
+        name: "Pilau",
+        description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
+        images: ["/images/foods/Pilau.jpg"],
+        region: "Nationwide"
+      },
+      {
+        name: "Chapati",
+        description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
+        images: ["/images/foods/Chapati.jpg", "/images/foods/chapati2.jpg", "/images/foods/chapati3.jpg"],
+        region: "Nationwide"
+      },
+      {
+        name: "Githeri",
+        description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
+        images: ["/images/foods/Githeri.jpg"],
+        region: "Nationwide"
+      },
+      {
+        name: "Mukimo",
+        description: "Kenyan meal prepared by mashing potatoes and green vegetables.",
+        images: ["/images/foods/mukimo1.jpg","/images/foods/mukimo2.jpg","/images/foods/mukimo3.jpg"],
+        region: "Nationwide"
+      },
+      {
+        name: "Matoke",
+        description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
+        images: ["/images/foods/Githeri.jpg"],
+        region: "Nationwide"
+      },
+      {
+        name: "Githeri",
+        description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
+        images: ["/images/foods/Githeri.jpg"],
+        region: "Nationwide"
+      },
+      {
+        name: "Githeri",
+        description: "Healthy collard greens sautéed with onions and tomatoes, often served with ugali.",
+        images: ["/images/foods/Githeri.jpg"],
+        region: "Nationwide"
+      },
     ],
     street: [
       {
         name: "Mutura",
         description: "Kenyan sausage made with meat, blood, and spices, grilled to perfection.",
-        images: ["/images/foods/Smocha.jpg", "/images/foods/Smocha.jpg"],
+        images: ["/images/foods/mutura1.jpg", "/images/foods/mutura2.jpg"],
         region: "Nationwide"
       },
       {
         name: "Mahindi Choma",
         description: "Grilled corn on the cob, often seasoned with chili and lime.",
-        images: ["/images/foods/mahindi-choma-1.jpg", "/images/foods/mahindi-choma-2.jpg"],
+        images: ["/images/foods/mahindiChoma.jpg"],
         region: "Nationwide"
       },
       {
         name: "Viazi Karai",
         description: "Deep-fried potatoes in spiced batter, a coastal street food favorite.",
-        images: ["/images/foods/viazi-karai-1.jpg", "/images/foods/viazi-karai-2.jpg"],
+        images: ["/images/foods/viaziKarai.jpg", "/images/foods/viaziKarai2.jpg"],
+        region: "Coastal"
+      },
+      {
+        name: "Smocha",
+        description: "Deep-fried potatoes in spiced batter, a coastal street food favorite.",
+        images: ["/images/foods/Smocha.jpg"],
+        region: "Coastal"
+      },
+      {
+        name: "Mayai Pasua",
+        description: "Deep-fried potatoes in spiced batter, a coastal street food favorite.",
+        images: ["/images/foods/mayai1.jpg", "/images/foods/mayai2.jpg", "/images/foods/mayai3.jpg"],
+        region: "Coastal"
+      },
+      {
+        name: "Chipo Mwitu",
+        description: "Deep-fried potatoes in spiced batter, a coastal street food favorite.",
+        images: ["/images/foods/Chipo.jpg"],
         region: "Coastal"
       }
     ],
     drinks: [
       {
+        name: "Chai",
+        description: "The 'magic potion' cocktail made with vodka, honey, lime, and sugar.",
+        images: ["/images/drinks/chai1.jpg","/images/drinks/chai2.jpg","/images/drinks/chai3.jpg"],
+        region: "Nationwide"
+      },
+      {
         name: "Dawa",
         description: "The 'magic potion' cocktail made with vodka, honey, lime, and sugar.",
-        images: ["/images/foods/dawa-1.jpg", "/images/foods/dawa-2.jpg"],
+        images: ["/images/drinks/dawa1.jpg"],
         region: "Nationwide"
       },
       {
         name: "Mursik",
         description: "Traditional Kalenjin fermented milk, often stored in special gourds.",
-        images: ["/images/foods/mursik-1.jpg", "/images/foods/mursik-2.jpg"],
+        images: ["/images/foods/mursik1.jpg", "/images/foods/mursik2.jpg"],
         region: "Rift Valley"
       },
       {
-        name: "Pombe",
+        name: "Muratina",
         description: "Traditional Kenyan beer made from fermented grains or bananas.",
-        images: ["/images/foods/pombe-1.jpg", "/images/foods/pombe-2.jpg"],
-        region: "Western"
+        images: ["/images/drinks/muratina1.jpg", "/images/drinks/muratina2.jpg"],
+        region: "Central"
       }
     ],
     regional: {
@@ -88,53 +156,53 @@ export default function KenyanCuisine() {
         {
           name: "Biryani",
           description: "Fragrant spiced rice with meat, a Swahili coastal specialty.",
-          images: ["/images/foods/biryani-1.jpg", "/images/foods/biryani-2.jpg"]
+          images: ["/images/foods/biryani.jpg"]
         },
         {
           name: "Mahamri",
           description: "Coconut-flavored doughnuts, perfect with Swahili coffee.",
-          images: ["/images/foods/mahamri-1.jpg", "/images/foods/mahamri-2.jpg"]
+          images: ["/images/foods/mahamri.jpg"]
         },
         {
           name: "Samaki Wa Kupaka",
           description: "Fish in coconut curry, a Mombasa delicacy.",
-          images: ["/images/foods/samaki-wa-kupaka-1.jpg", "/images/foods/samaki-wa-kupaka-2.jpg"]
+          images: ["/images/foods/samaki WaKupaka.jpg"]
         }
       ],
       western: [
         {
           name: "Omena",
           description: "Small dried fish, a protein-rich staple in western Kenya.",
-          images: ["/images/foods/omena-1.jpg", "/images/foods/omena-2.jpg"]
+          images: ["/images/foods/omena.jpg", "/images/foods/omena2.jpg"]
         },
         {
           name: "Ingokho",
           description: "Traditional chicken dish with indigenous spices.",
-          images: ["/images/foods/ingokho-1.jpg", "/images/foods/ingokho-2.jpg"]
+          images: ["/images/foods/ingokho.jpg"]
         }
       ],
       central: [
         {
           name: "Mukimo",
           description: "Mashed potatoes with greens, a Kikuyu traditional dish.",
-          images: ["/images/foods/mukimo-1.jpg", "/images/foods/mukimo-2.jpg"]
+          images: ["/images/foods/mukimo2.jpg", "/images/foods/mukimo3.jpg"]
         },
         {
           name: "Githeri",
           description: "Boiled maize and beans, a simple but nutritious meal.",
-          images: ["/images/foods/githeri-1.jpg", "/images/foods/githeri-2.jpg"]
+          images: ["/images/foods/Githeri.jpg"]
         }
       ],
       northern: [
         {
           name: "Nyirnyiri",
           description: "Somali-inspired spiced rice with meat and vegetables.",
-          images: ["/images/foods/nyirnyiri-1.jpg", "/images/foods/nyirnyiri-2.jpg"]
+          images: ["/images/foods/nyirnyir.png"]
         },
         {
           name: "Hilib Ari",
           description: "Grilled goat meat, a northern Kenyan specialty.",
-          images: ["/images/foods/hilib-ari-1.jpg", "/images/foods/hilib-ari-2.jpg"]
+          images: ["/images/foods/hiribAri.jpg"]
         }
       ]
     }
@@ -167,6 +235,7 @@ export default function KenyanCuisine() {
 
   return (
     <>
+    <Navbar />
       <Head>
         <title>Kenyan Cuisine | Taste the Flavors of Kenya</title>
         <meta name="description" content="Explore the rich and diverse culinary traditions of Kenya, from nyama choma to coastal biryani." />
@@ -207,7 +276,7 @@ export default function KenyanCuisine() {
                 onClick={() => { setActiveCategory('traditional'); setActiveRegion(null); }}
                 className={`mr-2 py-4 px-4 font-medium text-sm border-b-2 ${activeCategory === 'traditional' ? 'border-yellow-500 text-yellow-500' : 'border-transparent text-gray-300 hover:text-white'}`}
               >
-                Traditional Dishes
+                Common Dishes
               </button>
               <button
                 onClick={() => { setActiveCategory('street'); setActiveRegion(null); }}
@@ -263,7 +332,7 @@ export default function KenyanCuisine() {
         <section className="py-16 px-4 max-w-6xl mx-auto">
           {activeCategory !== 'regional' && (
             <h2 className="text-3xl font-bold mb-12 text-center font-serif" data-aos="fade-up">
-              {activeCategory === 'traditional' && 'Traditional Kenyan Dishes'}
+              {activeCategory === 'traditional' && 'Popular Kenyan Dishes'}
               {activeCategory === 'street' && 'Popular Street Foods'}
               {activeCategory === 'drinks' && 'Kenyan Beverages'}
             </h2>

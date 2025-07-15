@@ -55,7 +55,7 @@ export const NAV_ITEMS: NavItem[] = [
     title: "Our Culture",
     color: "text-purple-400",
     children: [
-      { title: "Kenyan Cuisines", path: "/explore/hidden-gems", color: "text-purple-300" },
+      { title: "Kenyan Cuisines", path: "/culture/foods", color: "text-purple-300" },
       { title: "Ethnic Groups", path: "/explore/cultural", color: "text-purple-300" },
       { title: "Arts and Craft", path: "/explore/cultural", color: "text-purple-300" },
       { title: "Oral Traditions", path: "/explore/cultural", color: "text-purple-300" },
