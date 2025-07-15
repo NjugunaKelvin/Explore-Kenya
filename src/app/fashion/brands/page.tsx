@@ -240,7 +240,7 @@ const FashionDesigners = () => {
       pressFeatures: ["National Geographic", "Vogue Italia", "Financial Times"]
     },
     {
-      id: '6',
+      id: '7',
       name: 'Sandstorm',
       category: 'Bags',
       description: 'Africa’s first performance running shoe brand, proudly designed and made in Kenya to celebrate the country’s running heritage.',
@@ -755,7 +755,7 @@ const FashionDesigners = () => {
                   </div>
                   <div className="relative h-64 md:h-auto">
                     <img
-                      src="/images/fashion/fashion-show.jpg"
+                      src="/images/fashion/fashionWeek.jpg"
                       alt="Nairobi Fashion Week runway"
                       className="w-full h-full object-cover"
                       loading="lazy"
