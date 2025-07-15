@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 'use client';
@@ -173,7 +174,7 @@ const KenyanCuisine = () => {
   // Get current food items based on selection
   const getCurrentFoodItems = () => {
     if (activeCategory !== 'regional') {
-      return foodData[activeCategory];
+      return foodData[activeCategory as 'traditional' | 'street' | 'drinks'];
     }
     return activeRegion ? foodData.regional[activeRegion] : [];
   };

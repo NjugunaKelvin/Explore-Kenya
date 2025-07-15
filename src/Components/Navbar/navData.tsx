@@ -35,7 +35,7 @@ export const NAV_ITEMS: NavItem[] = [
     color: "text-fuchsia-400",
     children: [
       { title: "Traditional Wear", path: "/fashion/traditional", color: "text-fuchsia-300" },
-      { title: "Designers and Brands", path: "/fashion/modern", color: "text-fuchsia-300" },
+      { title: "Designers and Brands", path: "/fashion/brands", color: "text-fuchsia-300" },
       { title: "Modern Fashion", path: "/fashion/modern", color: "text-fuchsia-300" },
       { title: "Fashion Gallery", path: "/fashion/modern", color: "text-fuchsia-300" },
 
