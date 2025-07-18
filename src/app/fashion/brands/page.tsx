@@ -875,3 +875,4 @@ const FashionDesigners = () => {
 };
 
 export default FashionDesigners;
+
