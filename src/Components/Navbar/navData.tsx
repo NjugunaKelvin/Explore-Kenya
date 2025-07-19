@@ -23,10 +23,10 @@ export const NAV_ITEMS: NavItem[] = [
     title: "Tourism",
     color: "text-amber-400",
     children: [
-      { title: "Top Destinations", path: "/tourism/safari-parks", color: "text-amber-300" },
-      { title: "Safari and Wildlife", path: "/tourism/beaches", color: "text-amber-300" },
-      { title: "Urban Experiences", path: "/tourism/wildlife", color: "text-amber-300" },
-      { title: "Beach and Coastline", path: "/tourism/wildlife", color: "text-amber-300" },
+      { title: "Top Destinations", path: "/tourism/top", color: "text-amber-300" },
+      { title: "Safari and Wildlife", path: "/tourism/safari", color: "text-amber-300" },
+      { title: "Urban Experiences", path: "/tourism/urban", color: "text-amber-300" },
+      { title: "Beach and Coastline", path: "/tourism/beach", color: "text-amber-300" },
 
     ],
   },
