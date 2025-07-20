@@ -3,6 +3,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Navbar from '@/Components/Navbar/Navbar';
 
 const TopDestinations = () => {
   // Enhanced destinations data with more categories and details
@@ -180,6 +181,7 @@ const TopDestinations = () => {
 
   return (
     <>
+    <Navbar />
       <Head>
         <title>Top Destinations in Kenya | Ultimate Travel Guide</title>
         <meta name="description" content="Discover Kenya's most spectacular destinations - from world-famous safaris to pristine beaches and vibrant cities. Expert travel guide with detailed information." />

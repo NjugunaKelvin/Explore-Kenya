@@ -13,8 +13,8 @@ export const NAV_ITEMS: NavItem[] = [
       { title: "Agriculture", path: "/economy/agriculture", color: "text-emerald-300" },
       { title: "Tech", path: "/economy/tech", color: "text-emerald-300" },
       { title: "Infrastructure", path: "/economy/infrastructure", color: "text-emerald-300" },
-      { title: "Manufacturing", path: "/economy/infrastructure", color: "text-emerald-300" },
-      { title: "Invest in Kenya", path: "/economy/infrastructure", color: "text-emerald-300" },
+      { title: "Manufacturing", path: "/economy/manufacturing", color: "text-emerald-300" },
+      { title: "Invest in Kenya", path: "/economy/invest", color: "text-emerald-300" },
 
 
     ],

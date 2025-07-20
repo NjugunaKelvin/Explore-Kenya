@@ -2,10 +2,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Head from 'next/head';
+import Navbar from '@/Components/Navbar/Navbar';
 
 const BeachCoastline = () => {
   return (
     <>
+    <Navbar />
       <Head>
         <title>Kenya's Beaches & Coastline | Tropical Paradise</title>
         <meta name="description" content="Discover Kenya's stunning Indian Ocean coastline with pristine beaches, coral reefs, and Swahili culture" />

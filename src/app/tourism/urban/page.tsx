@@ -2,10 +2,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Head from 'next/head';
+import Navbar from '@/Components/Navbar/Navbar';
 
 const UrbanExperiences = () => {
   return (
     <>
+    <Navbar />
       <Head>
         <title>Urban Experiences in Kenya | City Life & Culture</title>
         <meta name="description" content="Explore Kenya's vibrant cities from Nairobi's nightlife to Mombasa's historic streets" />
