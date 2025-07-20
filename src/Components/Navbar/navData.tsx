@@ -12,9 +12,11 @@ export const NAV_ITEMS: NavItem[] = [
     children: [
       { title: "Agriculture", path: "/economy/agriculture", color: "text-emerald-300" },
       { title: "Tech", path: "/economy/tech", color: "text-emerald-300" },
+      { title: "Business", path: "/economy/business", color: "text-emerald-300" },
       { title: "Infrastructure", path: "/economy/infrastructure", color: "text-emerald-300" },
       { title: "Manufacturing", path: "/economy/manufacturing", color: "text-emerald-300" },
       { title: "Invest in Kenya", path: "/economy/invest", color: "text-emerald-300" },
+      
 
 
     ],
