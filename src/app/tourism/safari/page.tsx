@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Navbar from '@/Components/Navbar/Navbar';
 
 const SafariWildlife = () => {
   // Initialize AOS
@@ -28,7 +29,7 @@ const SafariWildlife = () => {
       title: "Kenya's Untamed Wilderness",
       subtitle: "Where the Circle of Life Unfolds Before Your Eyes",
       description: "Experience the raw beauty of Africa's most iconic landscapes and witness nature's greatest spectacles",
-      image: "/images/safari-hero-1.jpg",
+      image: "/images/tourism/tourism/h1.jpeg",
       cta: "Plan Your Safari",
       link: "#planning",
       overlay: "rgba(0, 0, 0, 0.4)"
@@ -38,7 +39,7 @@ const SafariWildlife = () => {
       title: "The Great Migration",
       subtitle: "Nature's Most Spectacular Event",
       description: "Marvel at over 1.5 million wildebeest crossing the Mara River in a breathtaking display of survival",
-      image: "/images/safari-hero-2.jpg",
+      image: "/images/tourism/tourism/h2.jpeg",
       cta: "Migration Packages",
       link: "#migration",
       overlay: "rgba(20, 83, 45, 0.3)"
@@ -48,7 +49,7 @@ const SafariWildlife = () => {
       title: "Conservation Pioneers",
       subtitle: "Kenya's Wildlife Protection Legacy",
       description: "Discover how Kenya leads Africa in wildlife conservation and community-based protection programs",
-      image: "/images/safari-hero-3.jpg",
+      image: "/images/tourism/tourism/h3.jpeg",
       cta: "Support Conservation",
       link: "#conservation",
       overlay: "rgba(165, 42, 42, 0.3)"
@@ -82,7 +83,6 @@ const SafariWildlife = () => {
     };
   }, [heroSlides.length]);
 
-  // Enhanced national parks data
   const nationalParks = [
     {
       id: 1,
@@ -92,7 +92,7 @@ const SafariWildlife = () => {
       established: "1961",
       highlight: "Great Migration (July-Oct)",
       description: "The crown jewel of African safari destinations, featuring the highest density of predators in Africa and the spectacular wildebeest river crossings.",
-      image: "/images/maasai-mara.jpg",
+      image: "/images/tourism/tourism/maasai-mara.jpeg",
       landscape: "Rolling savannah, acacia woodlands, and the Mara River",
       bestTime: "Year-round, but prime July-October",
       animals: ["Lion", "Cheetah", "Elephant", "Wildebeest", "Zebra", "Hippo", "Crocodile"],
@@ -108,7 +108,7 @@ const SafariWildlife = () => {
       established: "1974",
       highlight: "Elephants with Kilimanjaro views",
       description: "Famous for its large elephant herds and stunning views of Mount Kilimanjaro, Africa's highest peak, just across the border in Tanzania.",
-      image: "/images/amboseli.jpg",
+      image: "/images/tourism/tourism/amboseli.jpeg",
       landscape: "Open plains, acacia woodland, swamps, and the dried-up Lake Amboseli",
       bestTime: "June-Oct & Jan-Feb (Dry seasons)",
       animals: ["Elephant", "Lion", "Giraffe", "Zebra", "Hippo", "Hyena"],
@@ -124,7 +124,7 @@ const SafariWildlife = () => {
       established: "1948",
       highlight: "Red elephants & diverse landscapes",
       description: "One of the world's largest game sanctuaries, famous for its 'red' elephants dusted in volcanic soil and the dramatic Mzima Springs.",
-      image: "/images/tsavo.jpg",
+      image: "/images/tourism/tourism/tsavo.jpeg",
       landscape: "Semi-arid grasslands, savannah, riverine vegetation, and volcanic hills",
       bestTime: "June-Oct & Jan-Feb",
       animals: ["Elephant", "Rhino", "Lion", "Buffalo", "Giraffe", "Leopard"],
@@ -140,7 +140,7 @@ const SafariWildlife = () => {
       established: "1985",
       highlight: "Unique northern species",
       description: "Home to rare species not found in southern parks, including the Grevy's zebra, Somali ostrich, and gerenuk (giraffe-necked antelope).",
-      image: "/images/samburu.jpg",
+      image: "/images/tourism/tourism/samburu.jpeg",
       landscape: "Arid scrubland with the Ewaso Ng'iro river providing vital water",
       bestTime: "Year-round",
       animals: ["Grevy's Zebra", "Gerenuk", "Somali Ostrich", "Elephant", "Lion"],
@@ -156,7 +156,7 @@ const SafariWildlife = () => {
       established: "1961",
       highlight: "Flamingo spectacle & rhinos",
       description: "Famous for its millions of flamingos that turn the lake pink, and one of the best places to see both black and white rhinos.",
-      image: "/images/nakuru.jpg",
+      image: "/images/tourism/tourism/nakuru.jpeg",
       landscape: "Alkaline lake surrounded by wooded grasslands and cliffs",
       bestTime: "Year-round",
       animals: ["Flamingo", "Rhino", "Lion", "Leopard", "Giraffe"],
@@ -172,7 +172,7 @@ const SafariWildlife = () => {
       established: "1968",
       highlight: "Wild & less visited",
       description: "Made famous by Joy Adamson's book 'Born Free', this lush park offers a more rugged, authentic safari experience with fewer visitors.",
-      image: "/images/meru.jpg",
+      image: "/images/tourism/tourism/meru.jpeg",
       landscape: "Diverse from savannah to riverine forests and swamps",
       bestTime: "June-Sep & Jan-Feb",
       animals: ["Elephant", "Lion", "Cheetah", "Hippo", "Crocodile"],
@@ -193,7 +193,7 @@ const SafariWildlife = () => {
         { 
           name: "African Lion", 
           scientific: "Panthera leo", 
-          image: "/images/lion.jpg", 
+          image: "/images/tourism/lion.jpeg", 
           status: "Vulnerable",
           population: "~2,500 in Kenya",
           facts: [
@@ -205,7 +205,7 @@ const SafariWildlife = () => {
         { 
           name: "African Leopard", 
           scientific: "Panthera pardus", 
-          image: "/images/leopard.jpg", 
+          image: "/images/tourism/leopard.jpeg", 
           status: "Vulnerable",
           population: "~1,000 in Kenya",
           facts: [
@@ -217,7 +217,7 @@ const SafariWildlife = () => {
         { 
           name: "African Elephant", 
           scientific: "Loxodonta africana", 
-          image: "/images/elephant.jpg", 
+          image: "/images/tourism/elephant.jpeg", 
           status: "Endangered",
           population: "~35,000 in Kenya",
           facts: [
@@ -229,7 +229,7 @@ const SafariWildlife = () => {
         { 
           name: "African Buffalo", 
           scientific: "Syncerus caffer", 
-          image: "/images/buffalo.jpg", 
+          image: "/images/tourism/buffalo.jpeg", 
           status: "Least Concern",
           population: "~40,000 in Kenya",
           facts: [
@@ -241,7 +241,7 @@ const SafariWildlife = () => {
         { 
           name: "Black Rhino", 
           scientific: "Diceros bicornis", 
-          image: "/images/rhino.jpg", 
+          image: "/images/tourism/rhino.jpeg", 
           status: "Critically Endangered",
           population: "~800 in Kenya",
           facts: [
@@ -261,7 +261,7 @@ const SafariWildlife = () => {
         { 
           name: "Blue Wildebeest", 
           scientific: "Connochaetes taurinus", 
-          image: "/images/wildebeest.jpg", 
+          image: "/images/tourism/wildebeest.jpg", 
           status: "Least Concern",
           population: "~1.5 million in migration",
           facts: [
@@ -273,7 +273,7 @@ const SafariWildlife = () => {
         { 
           name: "Burchell's Zebra", 
           scientific: "Equus quagga burchellii", 
-          image: "/images/zebra.jpg", 
+          image: "/images/tourism/zebra.jpg", 
           status: "Near Threatened",
           population: "~300,000 in migration",
           facts: [
@@ -285,7 +285,7 @@ const SafariWildlife = () => {
         { 
           name: "Thomson's Gazelle", 
           scientific: "Eudorcas thomsonii", 
-          image: "/images/gazelle.jpg", 
+          image: "/images/tourism/gazelle.jpg", 
           status: "Least Concern",
           population: "~500,000 in migration",
           facts: [
@@ -305,7 +305,7 @@ const SafariWildlife = () => {
         { 
           name: "Grevy's Zebra", 
           scientific: "Equus grevyi", 
-          image: "/images/grevys-zebra.jpg", 
+          image: "/images/tourism/grevys-zebra.jpg", 
           status: "Endangered",
           population: "~3,000 worldwide",
           facts: [
@@ -317,7 +317,7 @@ const SafariWildlife = () => {
         { 
           name: "Reticulated Giraffe", 
           scientific: "Giraffa reticulata", 
-          image: "/images/giraffe.jpg", 
+          image: "/images/tourism/giraffe.jpg", 
           status: "Vulnerable",
           population: "~16,000 worldwide",
           facts: [
@@ -329,7 +329,7 @@ const SafariWildlife = () => {
         { 
           name: "Gerenuk", 
           scientific: "Litocranius walleri", 
-          image: "/images/gerenuk.jpg", 
+          image: "/images/tourism/gerenuk.jpg", 
           status: "Near Threatened",
           population: "Declining",
           facts: [
@@ -341,7 +341,7 @@ const SafariWildlife = () => {
         { 
           name: "Somali Ostrich", 
           scientific: "Struthio molybdophanes", 
-          image: "/images/somali-ostrich.jpg", 
+          image: "/images/tourism/somali-ostrich.jpg", 
           status: "Vulnerable",
           population: "Declining",
           facts: [
@@ -371,7 +371,7 @@ const SafariWildlife = () => {
         "Cultural Maasai village visit"
       ],
       accommodations: "Luxury tented camps & lodges",
-      image: "/images/package-1.jpg",
+      image: "/images/tourism/package-1.jpg",
       featured: true
     },
     {
@@ -389,7 +389,7 @@ const SafariWildlife = () => {
         "Migration pattern briefing"
       ],
       accommodations: "Mobile migration camp",
-      image: "/images/package-2.jpg",
+      image: "/images/tourism/package-2.jpg",
       featured: true
     },
     {
@@ -407,7 +407,7 @@ const SafariWildlife = () => {
         "Night game drives"
       ],
       accommodations: "Boutique eco-lodges",
-      image: "/images/package-3.jpg",
+      image: "/images/tourism/package-3.jpg",
       featured: true
     },
     {
@@ -425,7 +425,7 @@ const SafariWildlife = () => {
         "Cultural activities for kids"
       ],
       accommodations: "Family-friendly lodges",
-      image: "/images/package-family.jpg",
+      image: "/images/tourism/package-family.jpg",
       featured: false
     }
   ];
@@ -435,7 +435,7 @@ const SafariWildlife = () => {
     {
       id: 1,
       name: "Kenya Wildlife Service",
-      logo: "/images/kws-logo.png",
+      logo: "/images/tourism/kws-logo.png",
       focus: "National park management & anti-poaching",
       achievements: "Reduced elephant poaching by 80% since 2013",
       link: "https://www.kws.go.ke"
@@ -443,7 +443,7 @@ const SafariWildlife = () => {
     {
       id: 2,
       name: "Sheldrick Wildlife Trust",
-      logo: "/images/sheldrick-logo.png",
+      logo: "/images/tourism/sheldrick-logo.png",
       focus: "Elephant & rhino orphan rescue",
       achievements: "Raised over 300 orphaned elephants",
       link: "https://www.sheldrickwildlifetrust.org"
@@ -451,7 +451,7 @@ const SafariWildlife = () => {
     {
       id: 3,
       name: "Lion Guardians",
-      logo: "/images/lion-guardians-logo.png",
+      logo: "/images/tourism/lion-guardians-logo.png",
       focus: "Human-lion conflict resolution",
       achievements: "Reduced lion killings by 90% in project areas",
       link: "https://www.lionguardians.org"
@@ -459,7 +459,7 @@ const SafariWildlife = () => {
     {
       id: 4,
       name: "Northern Rangelands Trust",
-      logo: "/images/nrt-logo.png",
+      logo: "/images/tourism/nrt-logo.png",
       focus: "Community conservancies",
       achievements: "Supports 39 community conservancies",
       link: "https://www.nrt-kenya.org"
@@ -468,6 +468,7 @@ const SafariWildlife = () => {
 
   return (
     <>
+    <Navbar />
       <Head>
         <title>Safari & Wildlife | Kenya's Premier Wildlife Experiences</title>
         <meta name="description" content="Discover Kenya's spectacular wildlife, from the Big Five to the Great Migration. Explore national parks, safari packages, and conservation efforts." />
@@ -920,7 +921,7 @@ const SafariWildlife = () => {
               data-aos="fade-right"
             >
               <Image 
-                src="/images/migration.jpg"
+                src="/images/tourism/migration.jpg"
                 alt="Great Migration in Maasai Mara"
                 fill
                 className="object-cover"
@@ -1376,7 +1377,7 @@ const SafariWildlife = () => {
             className="bg-gray-900 rounded-xl p-12 text-center relative overflow-hidden"
             data-aos="fade-up"
           >
-            <div className="absolute inset-0 bg-[url('/images/map-pattern.png')] opacity-5"></div>
+            <div className="absolute inset-0 bg-[url('/images/tourism/map-pattern.png')] opacity-5"></div>
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">Ready for Your Kenyan Safari Adventure?</h3>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
