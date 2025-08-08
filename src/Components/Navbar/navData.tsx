@@ -50,7 +50,8 @@ export const NAV_ITEMS: NavItem[] = [
     children: [
       { title: "Universities", path: "/education/universities", color: "text-blue-300" },
       { title: "Scholarships", path: "/education/scholarships", color: "text-blue-300" },
-      { title: "Tech Schools", path: "/education/tech-schools", color: "text-blue-300" },
+      { title: "International", path: "/education/universities", color: "text-blue-300" },
+
     ],
   },
   {
