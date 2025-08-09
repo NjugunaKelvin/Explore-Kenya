@@ -1,19 +1,10 @@
 # Explore Kenya
-The digital gateway into the Kenyan culture, tourism and fashion.
+The digital gateway to exploring Kenya's Diverse Culture, Fashion, Tourism, Education and many more this country has to offer
 
-## Intro
-- This is a website of websites exploring the diverseness of the country **Kenya**.
-- It features a number of sections like Tourism, Culture, Fashion, Economy, Education and Kenyan latest trends.
+## About
+This project is features around core Kenyan categories, divided in sections. 
+The Categories are; Economy, Tourism, Culture, Education and finally Fashion & Trends.
+These categories have subsections featuring a number of pages diving deep into detailed of the selected sub-category.
 
-## Table of Contens
-- [Navigation](#navigation)
-
-### Navigation
-The navigation includes the following files;
-- Navbar.tsx (Main component)
-- MobileMenu.tsx (Mobile view)
-- DropdownMenu.tsx (Desktop view)
-- navData.ts (Menu configuration)
-This navigation features Mobile-Friendly, Desktop Dropdowns and Modern UI
-
- 
+### 1. Economy
+- The Economy category has pages on Technology, Business, Manufacturing, 
