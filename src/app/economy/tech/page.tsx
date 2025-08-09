@@ -25,7 +25,7 @@ const TechnologyKenya = () => {
         <meta name="description" content="Comprehensive guide to Kenya's technology landscape - from M-Pesa's global impact to emerging startups, training programs, and investment opportunities in Africa's most dynamic tech hub" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Urbanist:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet" />
       </Head>
 
