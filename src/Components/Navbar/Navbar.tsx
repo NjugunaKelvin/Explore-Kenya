@@ -16,7 +16,6 @@ const NAV_ITEMS: NavItem[] = [
       { title: "Agriculture", path: "/economy/agriculture" },
       { title: "Tech", path: "/economy/tech" },
       { title: "Business", path: "/economy/business" },
-      { title: "Infrastructure", path: "/economy/infrastructure" },
       { title: "Manufacturing", path: "/economy/manufacturing" },
       { title: "Invest in Kenya", path: "/economy/invest" }
     ]
@@ -28,6 +27,13 @@ const NAV_ITEMS: NavItem[] = [
       { title: "Safari & Wildlife", path: "/tourism/safari" },
       { title: "Urban Experiences", path: "/tourism/urban" },
       { title: "Beach & Coastline", path: "/tourism/beach" }
+    ]
+  },
+  {
+    title: "Fashion",
+    children: [
+      { title: "Designers and Brands", path: "/fashion/brands" },
+      { title: "Traditional wear", path: "/tourism/safari" },
     ]
   },
   {
@@ -48,7 +54,7 @@ const NAV_ITEMS: NavItem[] = [
     ]
   },
   {
-    title: "News",
+    title: "Latest News",
     children: [
       { title: "Sports", path: "/news/sports" },
       { title: "Business", path: "/news/business" },
@@ -88,11 +94,9 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-4">
           <div className="relative">
-            {/* Glass Morphism Background */}
             <div className={`absolute inset-0 bg-gray-900/80 backdrop-blur-md border-b border-gray-700/50 ${scrolled ? "rounded-lg mx-4" : ""} transition-all duration-500`}></div>
             
             <div className="relative flex items-center justify-between h-16 z-10">
-              {/* Logo with Kenyan flag colors */}
               <Link 
                 href="/" 
                 className="text-2xl font-bold text-white hover:text-gray-300 transition-colors flex items-center"
@@ -127,7 +131,7 @@ export default function Navbar() {
                       )}
                     </button>
                     
-                    {/* Animated Dropdown */}
+                    {/* Dropdown */}
                     {item.children && (
                       <div 
                         className={`absolute left-0 mt-2 w-56 bg-gray-800/95 backdrop-blur-sm rounded-md shadow-xl overflow-hidden transition-all duration-300 origin-top transform ${activeDropdown === item.title ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"}`}
@@ -149,7 +153,7 @@ export default function Navbar() {
                 ))}
               </nav>
 
-              {/* Mobile Menu Button */}
+              {/* Mobile Menu */}
               <button
                 className="lg:hidden text-white focus:outline-none z-50"
                 onClick={() => setIsMobileMenuOpen(true)}
@@ -235,7 +239,6 @@ export default function Navbar() {
                 </li>
               ))}
               
-              {/* Additional Links */}
               <li className="border-t border-gray-800 pt-4 mt-4">
                 <Link 
                   href="/about" 
