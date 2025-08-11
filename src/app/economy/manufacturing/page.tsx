@@ -54,7 +54,7 @@ const ManufacturingKenya = () => {
             className="relative h-96 w-full overflow-hidden rounded-lg mb-8"
             data-aos="fade-in"
           >
-            <div className="absolute inset-0 bg-[url('/images/manufacturing/kenya-industrial-hero.jpg')] bg-cover bg-center opacity-90"></div>
+            <div className="absolute inset-0 bg-[url('/images/manufacturing/landing.webp')] bg-cover bg-center opacity-90"></div>
             <div className="absolute inset-0 bg-[#121212] opacity-80"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div>
