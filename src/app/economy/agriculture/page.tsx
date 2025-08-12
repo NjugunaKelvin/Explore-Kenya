@@ -6,6 +6,7 @@ import Navbar from '@/Components/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 const AgricultureKenya = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const AgricultureKenya = () => {
   }, []);
 
   return (
-    <div className="bg-[#121212] text-white">
+    <div className="bg-[#121212] text-white overflow-x-hidden">
       <Head>
         <title>Agriculture in Kenya | Economic Backbone</title>
         <meta name="description" content="Comprehensive overview of Kenya's agricultural sector - from traditional farming to modern agribusiness, policy frameworks, and technological innovations" />
@@ -36,6 +37,7 @@ const AgricultureKenya = () => {
         }
         body {
           font-family: 'Plus Jakarta Sans', sans-serif;
+          overflow-x: hidden;
         }
         .subtitle {
           font-family: 'Urbanist', sans-serif;
@@ -48,25 +50,31 @@ const AgricultureKenya = () => {
 
       <Navbar />
 
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 max-w-[100vw]">
         <section className="mb-16 text-center">
           <div 
             className="relative h-96 w-full overflow-hidden rounded-lg mb-8"
             data-aos="fade-in"
           >
-            <div className="absolute inset-0 bg-[url('/images/agri/tea-farm.jpg')] bg-cover bg-center opacity-90"></div>
+            <Image 
+              src="/images/agri/tea-farm.jpg"
+              alt="Kenyan tea farm landscape"
+              fill
+              className="object-cover opacity-90"
+              priority
+            />
             <div className="absolute inset-0 bg-[#121212] opacity-80"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div>
                 <h1 
-                  className="text-5xl md:text-6xl font-normal text-white mb-4 tracking-tight"
+                  className="text-5xl md:text-6xl font-normal text-white mb-4 tracking-tight px-4"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
                   Kenya's Agricultural Landscape
                 </h1>
                 <h2 
-                  className="text-3xl md:text-4xl subtitle text-white"
+                  className="text-3xl md:text-4xl subtitle text-white px-4"
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
@@ -77,7 +85,7 @@ const AgricultureKenya = () => {
           </div>
 
           <p 
-            className="text-lg body-text text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg body-text text-gray-300 max-w-3xl mx-auto leading-relaxed px-4"
             data-aos="fade-up"
             data-aos-delay="700"
           >
@@ -86,7 +94,7 @@ const AgricultureKenya = () => {
         </section>
 
         <section className="mb-20">
-          <div className="flex items-center mb-12">
+          <div className="flex items-center mb-12 px-4">
             <h2 
               className="text-4xl font-normal mr-6 text-white tracking-tight"
               data-aos="fade-up"
@@ -96,7 +104,7 @@ const AgricultureKenya = () => {
             <div className="flex-grow h-px bg-gradient-to-r from-[#F5C518] to-transparent"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 px-4">
             <div 
               className="bg-[#1E1E1E] p-8 rounded-lg"
               data-aos="fade-up"
@@ -105,8 +113,14 @@ const AgricultureKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Agriculture accounts for approximately 34% of Kenya's GDP, with the sector growing at an average of 4.5% annually.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center">
-                <p className="text-gray-400">[GDP Growth Chart]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/images/agri/gdp-chart.webp"
+                  alt="Agriculture GDP growth chart"
+                  width={400}
+                  height={200}
+                  className="object-contain w-full h-full p-4"
+                />
               </div>
             </div>
 
@@ -119,8 +133,14 @@ const AgricultureKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Over 40% of Kenya's total workforce and 70% of rural employment comes from agriculture.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center">
-                <p className="text-gray-400">[Employment Breakdown Infographic]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/images/agri/employment-infographic.webp"
+                  alt="Agricultural employment breakdown"
+                  width={400}
+                  height={200}
+                  className="object-contain w-full h-full p-4"
+                />
               </div>
             </div>
 
@@ -133,15 +153,21 @@ const AgricultureKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Agricultural products account for 65% of Kenya's total export earnings, with tea, coffee, and horticulture leading.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center">
-                <p className="text-gray-400">[Export Value Chart]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/images/agri/exports-chart.webp"
+                  alt="Agricultural export value chart"
+                  width={400}
+                  height={200}
+                  className="object-contain w-full h-full p-4"
+                />
               </div>
             </div>
           </div>
         </section>
 
         <section className="mb-20">
-          <div className="flex items-center mb-12">
+          <div className="flex items-center mb-12 px-4">
             <h2 
               className="text-4xl font-normal mr-6 text-white tracking-tight"
               data-aos="fade-up"
@@ -153,11 +179,16 @@ const AgricultureKenya = () => {
 
           {/* Tea */}
           <div 
-            className="grid md:grid-cols-2 gap-8 mb-16 items-center"
+            className="grid md:grid-cols-2 gap-8 mb-16 items-center px-4"
             data-aos="fade-up"
           >
             <div className="relative h-96 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-[url('/images/agri/tea-picking.jpg')] bg-cover bg-center"></div>
+              <Image 
+                src="/images/agri/tea-picking.jpg"
+                alt="Tea picking in Kenya"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h3 className="text-3xl font-normal mb-4 text-white">Tea Production</h3>
@@ -183,11 +214,16 @@ const AgricultureKenya = () => {
 
           {/* Horticulture */}
           <div 
-            className="grid md:grid-cols-2 gap-8 mb-16 items-center"
+            className="grid md:grid-cols-2 gap-8 mb-16 items-center px-4"
             data-aos="fade-up"
           >
             <div className="order-1 md:order-2 relative h-96 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-[url('/images/agri/flower-farm.jpg')] bg-cover bg-center"></div>
+              <Image 
+                src="/images/agri/flower-farm.jpg"
+                alt="Flower farm in Kenya"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="order-2 md:order-1">
               <h3 className="text-3xl font-normal mb-4 text-white">Horticulture</h3>
@@ -213,11 +249,16 @@ const AgricultureKenya = () => {
 
           {/* Dairy */}
           <div 
-            className="grid md:grid-cols-2 gap-8 mb-16 items-center"
+            className="grid md:grid-cols-2 gap-8 mb-16 items-center px-4"
             data-aos="fade-up"
           >
             <div className="relative h-96 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-[url('/images/agri/dairy-farm.jpg')] bg-cover bg-center"></div>
+              <Image 
+                src="/images/agri/dairy-farm.jpg"
+                alt="Dairy farm in Kenya"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h3 className="text-3xl font-normal mb-4 text-white">Dairy Sector</h3>
@@ -243,7 +284,7 @@ const AgricultureKenya = () => {
         </section>
 
         {/* Regional Variations */}
-        <section className="mb-20 bg-[#1E1E1E] rounded-2xl p-12">
+        <section className="mb-20 bg-[#1E1E1E] rounded-2xl p-12 mx-4">
           <div className="flex items-center mb-12">
             <h2 
               className="text-4xl font-normal mr-6 text-white tracking-tight"
@@ -263,8 +304,14 @@ const AgricultureKenya = () => {
               <p className="text-gray-300 body-text mb-6">
                 Fertile volcanic soils ideal for tea, coffee, and dairy farming.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Highlands Map]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/agri/highlands-map.webp"
+                  alt="Kenyan highlands agricultural map"
+                  width={400}
+                  height={200}
+                  className="object-contain w-full h-full p-4"
+                />
               </div>
               <ul className="space-y-2 text-gray-300 body-text">
                 <li className="flex items-start">
@@ -291,8 +338,14 @@ const AgricultureKenya = () => {
               <p className="text-gray-300 body-text mb-6">
                 Tropical climate suitable for fruits and irrigated agriculture.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Coastal Map]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/agri/coastal-map.webp"
+                  alt="Kenyan coastal agricultural map"
+                  width={400}
+                  height={200}
+                  className="object-contain w-full h-full p-4"
+                />
               </div>
               <ul className="space-y-2 text-gray-300 body-text">
                 <li className="flex items-start">
@@ -319,8 +372,14 @@ const AgricultureKenya = () => {
               <p className="text-gray-300 body-text mb-6">
                 Pastoralism and drought-resistant crops dominate these regions.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Arid Lands Map]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/agri/arid-map.webp"
+                  alt="Kenyan arid lands agricultural map"
+                  width={400}
+                  height={200}
+                  className="object-contain w-full h-full p-4"
+                />
               </div>
               <ul className="space-y-2 text-gray-300 body-text">
                 <li className="flex items-start">
@@ -341,7 +400,7 @@ const AgricultureKenya = () => {
         </section>
 
         {/* Modern Innovations */}
-        <section className="mb-20">
+        <section className="mb-20 px-4">
           <div className="flex items-center mb-12">
             <h2 
               className="text-4xl font-normal mr-6 text-white tracking-tight"
@@ -446,7 +505,7 @@ const AgricultureKenya = () => {
         </section>
 
         {/* Policy */}
-        <section className="mb-20 bg-[#1E1E1E] rounded-2xl p-12">
+        <section className="mb-20 bg-[#1E1E1E] rounded-2xl p-12 mx-4">
           <div className="flex items-center mb-12">
             <h2 
               className="text-4xl font-normal mr-6 text-white tracking-tight"
@@ -518,7 +577,7 @@ const AgricultureKenya = () => {
         </section>
 
         {/* Future Outlook */}
-        <section className="mb-20">
+        <section className="mb-20 px-4">
           <div className="flex items-center mb-12">
             <h2 
               className="text-4xl font-normal mr-6 text-white tracking-tight"
@@ -584,7 +643,7 @@ const AgricultureKenya = () => {
 
         {/* Call to Action */}
         <section 
-          className="bg-gradient-to-r from-[#1E1E1E] to-[#121212] text-white rounded-2xl p-12 text-center border border-[#F5C518]"
+          className="bg-gradient-to-r from-[#1E1E1E] to-[#121212] text-white rounded-2xl p-12 text-center border border-[#F5C518] mx-4"
           data-aos="fade-up"
         >
           <h2 className="text-4xl font-normal mb-6 tracking-tight">Explore Kenya's Agricultural Potential</h2>
