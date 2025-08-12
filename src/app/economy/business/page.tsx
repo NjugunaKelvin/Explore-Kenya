@@ -239,7 +239,7 @@ const BusinessKenya = () => {
                   <li className="flex items-start">
                     <span className="text-[#F5C518] mr-2">•</span>
                     <span>Withholding tax: 3-20%</span>
-                  </li>
+                  </li> 
                 </ul>
               </div>
             </div>
@@ -339,22 +339,22 @@ const BusinessKenya = () => {
               {
                 name: "Kenya Investment Authority",
                 role: "Investment facilitation",
-                logo: "/images/logos/keninvest.png"
+                logo: "/images/business/kenvest.jpg"
               },
               {
                 name: "Central Bank of Kenya",
                 role: "Monetary policy & banking",
-                logo: "/images/logos/cbk.png"
+                logo: "/images/business/cbk.png"
               },
               {
                 name: "Kenya Revenue Authority",
                 role: "Tax administration",
-                logo: "/images/logos/kra.png"
+                logo: "/images/business/kra.jpg"
               },
               {
                 name: "Kenya National Chamber of Commerce",
                 role: "Business advocacy",
-                logo: "/images/logos/kncci.png"
+                logo: "/images/business/kncci.jpg"
               }
             ].map((institution, index) => (
               <div 
