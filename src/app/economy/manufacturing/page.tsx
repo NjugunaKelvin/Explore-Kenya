@@ -128,7 +128,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
                 <Image 
-                  src="/images/manufacturing/employment-infographic.webp" 
+                  src="/images/manufacturing/jobs.jpg" 
                   alt="Manufacturing Employment Breakdown"
                   width={400}
                   height={200}
@@ -148,7 +148,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
                 <Image 
-                  src="/images/manufacturing/exports-chart.webp" 
+                  src="/images/manufacturing/exports.jpg" 
                   alt="Manufactured Exports Value Chart"
                   width={400}
                   height={200}
@@ -295,7 +295,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/manufacturing/nairobi-map.webp" 
+                  src="/images/manufacturing/nairobi.jpg" 
                   alt="Nairobi Industrial Zones Map"
                   width={400}
                   height={200}
@@ -329,7 +329,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/manufacturing/mombasa-map.webp" 
+                  src="/images/manufacturing/mombasa.jpg" 
                   alt="Mombasa Industrial Zones Map"
                   width={400}
                   height={200}
@@ -363,7 +363,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/manufacturing/western-map.webp" 
+                  src="/images/manufacturing/ek.jpg" 
                   alt="Western Kenya Industrial Zones Map"
                   width={400}
                   height={200}
@@ -497,7 +497,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/manufacturing/bidco-facility.webp" 
+                  src="/images/manufacturing/bidco.jpg" 
                   alt="Bidco Africa Manufacturing Facility"
                   width={400}
                   height={200}
@@ -518,7 +518,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/manufacturing/kaluworks-plant.webp" 
+                  src="/images/manufacturing/kaluworks.jpg" 
                   alt="Kaluworks Steel Plant"
                   width={400}
                   height={200}
@@ -539,7 +539,7 @@ const ManufacturingKenya = () => {
               </p>
               <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/manufacturing/kvm-assembly.webp" 
+                  src="/images/manufacturing/kvm.png" 
                   alt="KVM Vehicle Assembly Line"
                   width={400}
                   height={200}
