@@ -147,7 +147,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/safaricom-hq.jpg"
+                  src="/images/tech/saf.jpeg"
                   alt="Safaricom headquarters in Nairobi"
                   layout="fill"
                   objectFit="cover"
@@ -198,7 +198,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/twiga-delivery.jpg"
+                  src="/images/tech/twiga.jpg"
                   alt="Twiga Foods delivery in action"
                   layout="fill"
                   objectFit="cover"
@@ -248,7 +248,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/andela-office.jpg"
+                  src="/images/tech/andela.webp"
                   alt="Andela Nairobi office workspace"
                   layout="fill"
                   objectFit="cover"
@@ -299,7 +299,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/africas-talking.jpg"
+                  src="/images/tech/at.webp"
                   alt="Africa's Talking team working"
                   layout="fill"
                   objectFit="cover"
@@ -393,7 +393,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/andela-learning.jpg"
+                  src="/images/tech/andela.webp"
                   alt="Andela Learning Community session"
                   layout="fill"
                   objectFit="cover"
@@ -442,7 +442,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/ajira-digital.jpg"
+                  src="/images/tech/ajira.webp"
                   alt="Ajira Digital training session"
                   layout="fill"
                   objectFit="cover"
@@ -491,7 +491,7 @@ const TechnologyKenya = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/tech/moringa-school.jpg"
+                  src="/images/tech/moringa.webp"
                   alt="Moringa School coding class"
                   layout="fill"
                   objectFit="cover"

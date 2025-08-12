@@ -6,6 +6,7 @@ import Navbar from '@/Components/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 const ManufacturingKenya = () => {
   useEffect(() => {
@@ -85,7 +86,6 @@ const ManufacturingKenya = () => {
           </p>
         </section>
 
-        {/* Economic Impact */}
         <section className="mb-20">
           <div className="flex items-center mb-12">
             <h2 
@@ -106,8 +106,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Manufacturing accounts for approximately 10% of Kenya's GDP, with the sector growing at an average of 8% annually.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center">
-                <p className="text-gray-400">[Manufacturing GDP Chart]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/images/manufacturing/GDP.jpg" 
+                  alt="Manufacturing GDP Growth Chart"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
 
@@ -120,8 +126,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Over 300,000 direct jobs in manufacturing, with 3x multiplier effect in related sectors.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center">
-                <p className="text-gray-400">[Employment Breakdown Infographic]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/images/manufacturing/employment-infographic.webp" 
+                  alt="Manufacturing Employment Breakdown"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
 
@@ -134,14 +146,19 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Manufactured goods account for 35% of Kenya's total exports, with textiles and processed foods leading.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center">
-                <p className="text-gray-400">[Export Value Chart]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/images/manufacturing/exports-chart.webp" 
+                  alt="Manufactured Exports Value Chart"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Sector Breakdown */}
         <section className="mb-20">
           <div className="flex items-center mb-12">
             <h2 
@@ -153,13 +170,17 @@ const ManufacturingKenya = () => {
             <div className="flex-grow h-px bg-gradient-to-r from-[#F5C518] to-transparent"></div>
           </div>
 
-          {/* Agro-Processing */}
           <div 
             className="grid md:grid-cols-2 gap-8 mb-16 items-center"
             data-aos="fade-up"
           >
             <div className="relative h-96 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-[url('/images/manufacturing/agro-processing.jpg')] bg-cover bg-center"></div>
+              <Image 
+                src="/images/manufacturing/agro.jpg" 
+                alt="Agro-processing factory in Kenya"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h3 className="text-3xl font-normal mb-4 text-white">Agro-Processing</h3>
@@ -183,13 +204,17 @@ const ManufacturingKenya = () => {
             </div>
           </div>
 
-          {/* Textiles & Apparel */}
           <div 
             className="grid md:grid-cols-2 gap-8 mb-16 items-center"
             data-aos="fade-up"
           >
             <div className="order-1 md:order-2 relative h-96 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-[url('/images/manufacturing/textiles-apparel.jpg')] bg-cover bg-center"></div>
+              <Image 
+                src="/images/manufacturing/textile.jpg" 
+                alt="Textile factory in Kenya"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="order-2 md:order-1">
               <h3 className="text-3xl font-normal mb-4 text-white">Textiles & Apparel</h3>
@@ -213,13 +238,17 @@ const ManufacturingKenya = () => {
             </div>
           </div>
 
-          {/* Automotive */}
           <div 
             className="grid md:grid-cols-2 gap-8 mb-16 items-center"
             data-aos="fade-up"
           >
             <div className="relative h-96 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-[url('/images/manufacturing/automotive-kenya.jpg')] bg-cover bg-center"></div>
+              <Image 
+                src="/images/manufacturing/automotive.jpg" 
+                alt="Automotive assembly plant in Kenya"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h3 className="text-3xl font-normal mb-4 text-white">Automotive & Machinery</h3>
@@ -244,7 +273,6 @@ const ManufacturingKenya = () => {
           </div>
         </section>
 
-        {/* Industrial Hubs */}
         <section className="mb-20 bg-[#1E1E1E] rounded-2xl p-12">
           <div className="flex items-center mb-12">
             <h2 
@@ -265,8 +293,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-6">
                 Automotive, food processing, pharmaceuticals, and light manufacturing in Export Processing Zones.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Nairobi Industrial Map]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/manufacturing/nairobi-map.webp" 
+                  alt="Nairobi Industrial Zones Map"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <ul className="space-y-2 text-gray-300 body-text">
                 <li className="flex items-start">
@@ -293,8 +327,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-6">
                 Heavy industries, steel production, and port-related manufacturing activities.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Mombasa Industrial Map]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/manufacturing/mombasa-map.webp" 
+                  alt="Mombasa Industrial Zones Map"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <ul className="space-y-2 text-gray-300 body-text">
                 <li className="flex items-start">
@@ -321,8 +361,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-6">
                 Agro-processing hubs for western Kenya's agricultural output.
               </p>
-              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Western Kenya Map]</p>
+              <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/manufacturing/western-map.webp" 
+                  alt="Western Kenya Industrial Zones Map"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <ul className="space-y-2 text-gray-300 body-text">
                 <li className="flex items-start">
@@ -342,7 +388,6 @@ const ManufacturingKenya = () => {
           </div>
         </section>
 
-        {/* Investment Incentives */}
         <section className="mb-20">
           <div className="flex items-center mb-12">
             <h2 
@@ -430,7 +475,6 @@ const ManufacturingKenya = () => {
           </div>
         </section>
 
-        {/* Success Stories */}
         <section className="mb-20 bg-[#1E1E1E] rounded-2xl p-12">
           <div className="flex items-center mb-12">
             <h2 
@@ -451,8 +495,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 From a single cooking oil brand to 22 manufacturing lines across East Africa, exporting to 16 countries with $500M+ revenue.
               </p>
-              <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Bidco Facility Image]</p>
+              <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/manufacturing/bidco-facility.webp" 
+                  alt="Bidco Africa Manufacturing Facility"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="text-[#F5C518] text-sm subtitle">Consumer Goods • Regional Expansion</div>
             </div>
@@ -466,8 +516,14 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 East Africa's largest steel manufacturer producing 100,000+ tons annually, supplying regional construction projects.
               </p>
-              <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[Kaluworks Plant Image]</p>
+              <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/manufacturing/kaluworks-plant.webp" 
+                  alt="Kaluworks Steel Plant"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="text-[#F5C518] text-sm subtitle">Steel Manufacturing • Construction</div>
             </div>
@@ -481,15 +537,20 @@ const ManufacturingKenya = () => {
               <p className="text-gray-300 body-text mb-4">
                 Assembling 5,000+ vehicles annually including buses for public transport and safari tourism.
               </p>
-              <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center mb-4">
-                <p className="text-gray-400">[KVM Assembly Line]</p>
+              <div className="h-40 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
+                <Image 
+                  src="/images/manufacturing/kvm-assembly.webp" 
+                  alt="KVM Vehicle Assembly Line"
+                  width={400}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="text-[#F5C518] text-sm subtitle">Automotive • Local Assembly</div>
             </div>
           </div>
         </section>
 
-        {/* Future Outlook */}
         <section className="mb-20">
           <div className="flex items-center mb-12">
             <h2 
@@ -554,7 +615,6 @@ const ManufacturingKenya = () => {
           </div>
         </section>
 
-        {/* Call to Action */}
         <section 
           className="bg-gradient-to-r from-[#1E1E1E] to-[#121212] text-white rounded-2xl p-12 text-center border border-[#F5C518]"
           data-aos="fade-up"
