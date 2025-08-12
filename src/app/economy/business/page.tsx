@@ -79,7 +79,7 @@ const BusinessKenya = () => {
             </div>
             <div className="order-1 md:order-2 relative h-96" data-aos="fade-left">
               <Image
-                src="/images/business/kenya-currency.jpg"
+                src="/images/business/currency.jpg"
                 alt="Kenyan currency and business"
                 layout="fill"
                 objectFit="contain"
@@ -172,7 +172,7 @@ const BusinessKenya = () => {
             </div>
             <div className="relative h-96" data-aos="fade-left">
               <Image
-                src="/images/business/kenya-banking.jpg"
+                src="/images/business/banks.jpg"
                 alt="Kenyan banking system"
                 layout="fill"
                 objectFit="cover"
