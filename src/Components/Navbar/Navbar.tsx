@@ -23,7 +23,6 @@ const NAV_ITEMS: NavItem[] = [
   {
     title: "Tourism",
     children: [
-      { title: "Top Destinations", path: "/tourism/top" },
       { title: "Safari & Wildlife", path: "/tourism/safari" },
       { title: "Urban Experiences", path: "/tourism/urban" },
       { title: "Beach & Coastline", path: "/tourism/beach" }
@@ -42,15 +41,14 @@ const NAV_ITEMS: NavItem[] = [
       { title: "Cuisines", path: "/culture/foods" },
       { title: "Ethnic Groups", path: "/culture/ethnic-groups" },
       { title: "Arts & Craft", path: "/culture/arts" },
-      { title: "Traditions", path: "/culture/traditions" }
     ]
   },
   {
     title: "Education",
     children: [
-      { title: "Universities", path: "/education/universities" },
+      { title: "Universities & Colleged", path: "/education/universities" },
       { title: "Scholarships", path: "/education/scholarships" },
-      { title: "International", path: "/education/international" }
+      { title: "International Schools", path: "/education/international" }
     ]
   },
   {
@@ -102,8 +100,8 @@ export default function Navbar() {
                 className="text-2xl font-bold text-white hover:text-gray-300 transition-colors flex items-center"
                 aria-label="Go to homepage"
               >
-                <span className="font-['Permanent_Marker'] tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-black to-red-500">
-                  Kenya<span className="text-white">Explorer</span>
+                <span className="font-['Permanent_Marker'] tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-red to-red-500">
+                  Welcome<span className="text-white"> to Kenya</span>
                 </span>
               </Link>
 

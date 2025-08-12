@@ -8,6 +8,7 @@ import Head from 'next/head';
 import Navbar from '@/Components/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from '@/Components/Footer/Footer';
 
 type Designer = {
   id: string;
@@ -869,6 +870,7 @@ const FashionDesigners = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );
