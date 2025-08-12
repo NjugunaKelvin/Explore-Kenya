@@ -191,7 +191,7 @@ const BusinessKenya = () => {
             <div className="bg-[#1E1E1E] rounded-xl overflow-hidden" data-aos="fade-up">
               <div className="relative h-48">
                 <Image
-                  src="/images/business/company-registration.jpg"
+                  src="/images/business/reg.jpg"
                   alt="Company registration"
                   layout="fill"
                   objectFit="cover"
@@ -219,7 +219,7 @@ const BusinessKenya = () => {
             <div className="bg-[#1E1E1E] rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
               <div className="relative h-48">
                 <Image
-                  src="/images/business/taxation.jpg"
+                  src="/images/business/tax.jpg"
                   alt="Taxation in Kenya"
                   layout="fill"
                   objectFit="cover"
@@ -247,7 +247,7 @@ const BusinessKenya = () => {
             <div className="bg-[#1E1E1E] rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
               <div className="relative h-48">
                 <Image
-                  src="/images/business/investment.jpg"
+                  src="/images/business/invest.jpg"
                   alt="Investment opportunities"
                   layout="fill"
                   objectFit="cover"
