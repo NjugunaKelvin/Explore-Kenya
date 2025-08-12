@@ -115,7 +115,7 @@ const AgricultureKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
                 <Image 
-                  src="/images/agri/gdp-chart.webp"
+                  src="/images/agri/GDP.png"
                   alt="Agriculture GDP growth chart"
                   width={400}
                   height={200}
@@ -135,7 +135,7 @@ const AgricultureKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
                 <Image 
-                  src="/images/agri/employment-infographic.webp"
+                  src="/images/agri/employment.jpg"
                   alt="Agricultural employment breakdown"
                   width={400}
                   height={200}
@@ -155,7 +155,7 @@ const AgricultureKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden">
                 <Image 
-                  src="/images/agri/exports-chart.webp"
+                  src="/images/agri/exports.png"
                   alt="Agricultural export value chart"
                   width={400}
                   height={200}
@@ -184,7 +184,7 @@ const AgricultureKenya = () => {
           >
             <div className="relative h-96 rounded-lg overflow-hidden">
               <Image 
-                src="/images/agri/tea-picking.jpg"
+                src="/images/agri/picking.jpg"
                 alt="Tea picking in Kenya"
                 fill
                 className="object-cover"
@@ -219,7 +219,7 @@ const AgricultureKenya = () => {
           >
             <div className="order-1 md:order-2 relative h-96 rounded-lg overflow-hidden">
               <Image 
-                src="/images/agri/flower-farm.jpg"
+                src="/images/agri/horticulture.jpg"
                 alt="Flower farm in Kenya"
                 fill
                 className="object-cover"
@@ -254,7 +254,7 @@ const AgricultureKenya = () => {
           >
             <div className="relative h-96 rounded-lg overflow-hidden">
               <Image 
-                src="/images/agri/dairy-farm.jpg"
+                src="/images/agri/dairy.jpg"
                 alt="Dairy farm in Kenya"
                 fill
                 className="object-cover"
@@ -306,7 +306,7 @@ const AgricultureKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/agri/highlands-map.webp"
+                  src="/images/agri/highland.png"
                   alt="Kenyan highlands agricultural map"
                   width={400}
                   height={200}
@@ -340,7 +340,7 @@ const AgricultureKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/agri/coastal-map.webp"
+                  src="/images/agri/coast.jpg"
                   alt="Kenyan coastal agricultural map"
                   width={400}
                   height={200}
@@ -374,7 +374,7 @@ const AgricultureKenya = () => {
               </p>
               <div className="h-48 bg-[#2A2A2A] rounded-lg flex items-center justify-center overflow-hidden mb-4">
                 <Image 
-                  src="/images/agri/arid-map.webp"
+                  src="/images/agri/arid.png"
                   alt="Kenyan arid lands agricultural map"
                   width={400}
                   height={200}
