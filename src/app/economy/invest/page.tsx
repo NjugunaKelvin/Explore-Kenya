@@ -52,7 +52,7 @@ const InvestKenya = () => {
       <main className="container mx-auto px-4 py-8 max-w-7xl">
         {/* Hero Section with Video Background */}
         <section className="mb-20 relative h-screen min-h-[600px] flex items-center justify-center">
-          <div className="absolute inset-0 bg-[url('/images/invest/kenya-skyline.jpg')] bg-cover bg-center opacity-70"></div>
+          <div className="absolute inset-0 bg-[url('/images/invest/kenya.jpg')] bg-cover bg-center opacity-70"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent"></div>
           <div className="relative z-10 text-center px-4" data-aos="fade-up">
             <h1 className="text-5xl md:text-7xl font-normal text-white mb-6">
@@ -176,13 +176,13 @@ const InvestKenya = () => {
               {
                 title: "Infrastructure",
                 desc: "$62B needed in roads, railways, ports and energy projects under Vision 2030",
-                image: "/images/invest/infrastructure.jpg",
+                image: "/images/invest/road.jpg",
                 stats: ["Public-Private Partnerships", "10-15% ROI", "20-year concessions"]
               },
               {
                 title: "Technology & Innovation",
                 desc: "Africa's Silicon Savannah with 200+ tech startups and $1B+ annual investment",
-                image: "/images/invest/technology.jpg",
+                image: "/images/invest/tech.jpg",
                 stats: ["30% growth in VC funding", "Tax incentives", "Digital talent pool"]
               },
               {
@@ -325,19 +325,19 @@ const InvestKenya = () => {
                 quote: "Kenya's skilled workforce and strategic location made it the perfect choice for our African headquarters.",
                 name: "Sarah Johnson",
                 title: "CEO, TechGlobal Africa",
-                image: "/images/invest/executive1.jpg"
+                image: "/images/invest/p.jpg"
               },
               {
                 quote: "The incentives in Special Economic Zones reduced our startup costs by 30% compared to other markets.",
                 name: "Michael Chen",
                 title: "MD, Orient Manufacturing",
-                image: "/images/invest/executive2.jpg"
+                image: "/images/invest/p.jpg"
               },
               {
                 quote: "We've achieved 25% annual growth in Kenya thanks to the thriving middle class consumer market.",
                 name: "Amina Sow",
                 title: "CFO, ConsumerGoods Africa",
-                image: "/images/invest/executive3.jpg"
+                image: "/images/invest/p.jpg"
               }
             ].map((testimonial, index) => (
               <div 
