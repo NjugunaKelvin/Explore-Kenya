@@ -35,7 +35,7 @@ const TraditionalWear = () => {
         <section className="relative h-screen max-h-[800px] flex items-center">
           <div className="absolute inset-0 z-0">
             <Image 
-              src="/images/kenya-wear-hero.jpg"
+              src="/images/fashion/hero.jpeg"
               alt="Kenyan traditional wear collage"
               fill
               className="object-cover opacity-40"
