@@ -103,7 +103,7 @@ const TraditionalWear = () => {
               <div data-aos="fade-right">
                 <div className="relative h-96 w-full">
                   <Image
-                    src="/images/maasai-attire-detail.jpg"
+                    src="/images/fashion/maasai.jpeg"
                     alt="Maasai warriors in traditional shúkà"
                     fill
                     className="object-cover rounded"
@@ -126,7 +126,7 @@ const TraditionalWear = () => {
               <div className="lg:order-2" data-aos="fade-left">
                 <div className="relative h-96 w-full">
                   <Image
-                    src="/images/swahili-attire-detail.jpg"
+                    src="/images/fashion/swahili.jpg"
                     alt="Swahili traditional wear"
                     fill
                     className="object-cover rounded"
