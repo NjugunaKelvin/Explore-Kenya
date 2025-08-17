@@ -32,7 +32,7 @@ const NAV_ITEMS: NavItem[] = [
     title: "Fashion",
     children: [
       { title: "Designers and Brands", path: "/fashion/brands" },
-      { title: "Traditional wear", path: "/tourism/safari" },
+      { title: "Traditional wear", path: "/fashion/traditional" },
     ]
   },
   {
