@@ -46,7 +46,7 @@ const NAV_ITEMS: NavItem[] = [
   {
     title: "Education",
     children: [
-      { title: "Universities & Colleged", path: "/education/universities" },
+      { title: "Universities & Colleges", path: "/education/universities" },
       { title: "Scholarships", path: "/education/scholarships" },
       { title: "International Schools", path: "/education/international" }
     ]
